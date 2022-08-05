@@ -64,12 +64,26 @@
  
 //  Задача 5: Напишите программу, которая на вход принимает одно число (N), а на выходе показывает все целые числа в промежутке от -N до N.
 
-Console.WriteLine("Введите число");
-int number = Convert.ToInt32(Console.ReadLine());
-int i = -number;
+// Console.WriteLine("Введите число");
+// int number = Convert.ToInt32(Console.ReadLine());
+// int i = -number;
 
-while (i <= number)
+// while (i <= number)
+// {
+//     Console.Write(i + ",");
+//     i++;
+// }
+
+// Напишите программу, которая принимает на вход трёхзначное число и на выходе показывает последнюю цифру этого числа.
+
+Console.WriteLine("Введите трехзначное число");
+int number = Convert.ToInt32(Console.ReadLine());
+if (number>=100 && number<1000)
 {
-    Console.Write(i + ",");
-    i++;
+    Console.Write(number%10);
 }
+else 
+{
+    Console.Write("Это не трехзначное число");
+}
+
